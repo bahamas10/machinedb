@@ -1,0 +1,28 @@
+{
+  "name": "machinedb",
+  "version": "0.0.0",
+  "description": "A machine database that stores information as flat JSON files",
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "main": "./machinedb.js",
+  "preferGlobal": true,
+  "bin": {
+    "machinedb": "./machinedb.js",
+    "machinedb-server": "./machinedb-server.js"
+  },
+  "scripts": {
+    "test": "for f in test/*; do echo \"$f\"; node \"$f\" || exit 1; done; echo Passed; exit 0"
+  },
+  "repository": "git://github.com/bahamas10/machinedb.git",
+  "homepage": "https://github.com/bahamas10/machinedb",
+  "license": "MIT",
+  "dependencies": {
+    "routes": "~0.2.0",
+    "log-buffer": "0.0.3",
+    "static-route": "~0.1.0",
+    "access-log": "~0.3.8",
+    "easyreq": "~0.1.1",
+    "posix-getopt": "~1.0.0",
+    "latest": "~0.1.2",
+    "tmp": "0.0.23"
+  }
+}
