@@ -1,6 +1,6 @@
 {
   "name": "machinedb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A machine database that stores information as flat JSON files",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "main": "./machinedb.js",
