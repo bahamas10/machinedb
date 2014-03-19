@@ -29,7 +29,7 @@ function usage() {
     '  machinedb create <node>   # create a node by name <node>, reads JSON from stdin',
     '  machinedb update <node>   # update a node by name <node>, reads JSON from stdin',
     '  machinedb edit <node>     # edit a node by opening $EDITOR on the JSON returned by the server',
-    '  machinedb delet <node>    # remove a node',
+    '  machinedb delete <node>   # remove a node',
     '',
     'Options',
     '  -h, --help         print this message and exit',

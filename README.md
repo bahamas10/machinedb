@@ -49,7 +49,7 @@ First, we'll see what happens when we try to access data before we save any
 `GET /nodes` returns `[]`, because there are no nodes saved yet.  Trying to access a node
 by name returns a `404` because, again, nothing has been put in the database yet.
 
-Let's put some data into the database and GET it back
+Let's put some data into the database and `GET` it back
 
     $ curl -s -XPUT --data '{"foo":"bar"}' http://localhost:9000/nodes/dave.example.com | json
     {
@@ -154,7 +154,7 @@ Run it by itself to see all nodes
     ]
 
 You can view a list of nodes by running it with `list`, or view a specific
-node with `list`
+node with `show`
 
     $ machinedb list
     mike.example.com
@@ -253,7 +253,7 @@ Usage
       machinedb create <node>   # create a node by name <node>, reads JSON from stdin
       machinedb update <node>   # update a node by name <node>, reads JSON from stdin
       machinedb edit <node>     # edit a node by opening $EDITOR on the JSON returned by the server
-      machinedb delet <node>    # remove a node
+      machinedb delete <node>   # remove a node
 
     Options
       -h, --help         print this message and exit
@@ -277,8 +277,6 @@ also doesn't limit the number of files it will open at a time (todo fix this)
 
 Inspiration
 -----------
-
-My tweet about the filesystem being the best nosql database.
 
 <blockquote class="twitter-tweet" lang="en"><p>idea: chef replacement in bash, using simple bash scripts. search() by curl&#39;ing a machine database that stores JSON for each node.</p>&mdash; Dave Eddy (@bahamas10_) <a href="https://twitter.com/bahamas10_/statuses/443818952125194240">March 12, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
